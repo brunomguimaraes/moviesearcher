@@ -4,7 +4,11 @@ class Movies extends React.Component {
 
     render() {
         return <div className='containerMovie'>
-                <div className='movieCard'><table key={this.props.movie.id}>
+                <h2>{this.props.movie.title}</h2>
+                <h2>{this.movie.title}</h2>
+                <h2>{this.title}</h2>
+
+                {/* <div className='movieCard'><table key={this.props.movie.id}>
                <tbody>
             <tr>
               <td>
@@ -25,7 +29,7 @@ class Movies extends React.Component {
   
           </tbody>
         </table>
-        </div>
+        </div> */}
     </div>
     }
 
