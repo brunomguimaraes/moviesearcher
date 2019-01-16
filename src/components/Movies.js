@@ -18,10 +18,12 @@ class Movies extends React.Component {
                 <div className='movieCardTitle'>
               <h2>{this.props.movie.title}</h2>
                 </div>
-              <h3>{this.props.movie.rating}</h3>
+                <div className='movieCardRating'>
+              <h3 className='movieblockRating'>{this.props.movie.rating}</h3>
+                </div>
               <h5>{this.props.movie.release_date}</h5>
               <p>{this.props.movie.overview}</p>
-              <p>{this.props.movie.genre_ids}</p>
+              <p>{this.props.movie.genre}</p>
               </td>
             </tr>
   

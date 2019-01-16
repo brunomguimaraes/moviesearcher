@@ -7,31 +7,8 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-   
-  //  this.genreSearch()
+
   }
-
-//   genreSearch() {
-//     const urlGenre = 'https://api.themoviedb.org/3/genre/movie/list?api_key=f72da0f6cdcb08642d419794f736cadb&language=pt-BR'
-//     $.ajax({
-//       url: urlGenre,
-//       success: (searchResults) => {
-//         const genres = searchResults.genres
-//         console.log(Object.entries(genres))
-
-//         let genreArray = genres.filter( function (genre) {
-//           this.setState({...this.state, description: '', list: resp.data}))
-//           return genre.id === 18
-//         })
-//           console.log(genreArray)
-//           let genreArr = Object.values(genreArray)
-//           console.log(Object.values(genreArray))
-//       },
-//       error: (xhr, status, err) =>{
-//         console.error('Fail to fetch genre data.')
-//       }
-//   })
-// }
 
   movieSearch(searchParameter) {
     const urldb = 'http://api.themoviedb.org/3/search/movie?api_key=f72da0f6cdcb08642d419794f736cadb&language=pt-BR&query=' + searchParameter
@@ -45,9 +22,28 @@ class App extends Component {
         results.forEach((movie) => {
           movie.poster = 'https://image.tmdb.org/t/p/w185' + movie.poster_path
           movie.rating = movie.vote_average * 10 + '%'
-          movie.genre = movie.genre_ids.forEach(() => {
-            
-          })
+          
+
+          const urlGenre = 'https://api.themoviedb.org/3/genre/movie/list?api_key=f72da0f6cdcb08642d419794f736cadb&language=pt-BR'
+          $.ajax({
+            url: urlGenre,
+            success: (genreSearchResults) => {
+          
+            let arrGen = []
+            movie.genre_ids.forEach( elementId => {
+
+          //let genrestext = genreSearchResults.genres.filter(genre => genre.id === elementId).map(genre => genre.name)
+          arrGen.push(genreSearchResults.genres.filter(genre => genre.id === elementId).map(genre => genre.name))
+          
+          //console.log(arrGen)
+        })
+        movie.genre = arrGen.flat()
+        console.log(movie.genre)
+      },
+      error: (xhr, status, err) =>{
+        console.error('Fail to fetch genre data.')
+      }
+    })
           const gridMovie = <Movies key={movie.id} movie={movie} />
           fetchedMovie.push(gridMovie)
         })

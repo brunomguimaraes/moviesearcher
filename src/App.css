@@ -1,7 +1,21 @@
-.movieCardTitle{
-  background-color: #04507c;
+.movieblockRating {
+  border-radius: 50px;
+  border: 1px solid #00E8E4;
+  background-color: red;
+
+
+}
+.movieCardRating{
+  background-color: #116193;
   display: flex;
-  color: #04e5de;
+  color: #00E8E4;
+  justify-content: flex-start;
+  font-family: Abel;
+}
+.movieCardTitle{
+  background-color: #116193;
+  display: flex;
+  color: #00E8E4;
   justify-content: flex-start;
   font-family: Abel;
 }
@@ -18,9 +32,9 @@
 }
 
 .headerBar {
-  background-color: #04507c;
+  background-color: #116193;
   display: flex;
-  color: #04e5de;
+  color: #00E8E4;
   justify-content: center;
   font-family: Abel;
 }
@@ -29,13 +43,13 @@
     width: 85%;
     padding: 12px 24px;
 
-    background-color: gray;
+    background-color: #EBEBEB;
     transition: transform 250ms ease-in-out;
     font-size: 14px;
     line-height: 18px;
     
     color: #575756;
-    background-color: lightgray;
+    background-color: #EBEBEB;
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 95% center;
