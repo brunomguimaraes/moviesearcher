@@ -1,0 +1,97 @@
+.movieCardTitle{
+  background-color: #04507c;
+  display: flex;
+  color: #04e5de;
+  justify-content: flex-start;
+  font-family: Abel;
+}
+
+.containerMovie{
+  border: 1px solid #575756;
+  width: 85%;
+  display: inline-block;
+}
+
+.movieCard{
+  display: contents;
+  justify-content: center;
+}
+
+.headerBar {
+  background-color: #04507c;
+  display: flex;
+  color: #04e5de;
+  justify-content: center;
+  font-family: Abel;
+}
+
+.searchBar {
+    width: 85%;
+    padding: 12px 24px;
+
+    background-color: gray;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #575756;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    
+    /* &::placeholder {
+        color: color(#575756 a(0.8));
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    
+    &:hover,
+    &:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+} */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
