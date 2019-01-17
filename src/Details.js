@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
 
+export default props => {
 
-class Details extends Component {
+  // const { movie } = props;
+  // console.log(movie)
 
-  render() {
-    return (
-      <div className='App'>
+  
+  return (
+      
+      <div>Teste</div>
+  );
 
-        <div className='headerBar'>
-          <h1> Movies </h1>
-        </div>
-
-        <h2> Info Details </h2>
-      </div>
-    );
-  }
 }
 
-export default Details;
+
