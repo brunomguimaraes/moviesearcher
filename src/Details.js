@@ -2,11 +2,7 @@ import React from 'react';
 
 export default props => {
 
-  // const { movie } = props;
-  // console.log(movie)
-
-  
-  return (
+    return (
       
       <div>Teste</div>
   );

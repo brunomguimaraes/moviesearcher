@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 class Movies extends React.Component {
+  render() {
+    return (
+      <div className="containerMovie">
+        <h2>{this.props.movie.title}</h2>
+        <h2>{this.movie.title}</h2>
+        <h2>{this.title}</h2>
 
-    render() {
-        return <div className='containerMovie'>
-                <h2>{this.props.movie.title}</h2>
-                <h2>{this.movie.title}</h2>
-                <h2>{this.title}</h2>
-
-                {/* <div className='movieCard'><table key={this.props.movie.id}>
+        {/* <div className='movieCard'><table key={this.props.movie.id}>
                <tbody>
             <tr>
               <td>
@@ -30,9 +30,9 @@ class Movies extends React.Component {
           </tbody>
         </table>
         </div> */}
-    </div>
-    }
-
+      </div>
+    );
+  }
 }
 
-export default Movies
+export default Movies;
