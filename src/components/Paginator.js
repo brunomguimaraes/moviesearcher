@@ -5,9 +5,9 @@ function Paginator(props) {
     const pageCount = Math.ceil(props.movieCount / props.pageSize);
     return Array(pageCount)
       .fill()
-      .map((_, idx) => (
-        <button type="button" key={"idx." + idx} onClick={props.pageChanger}>
-          {idx + 1}
+      .map((_, pageIndex) => (
+        <button type="button" key={"pageIndex." + pageIndex} onClick={props.pageChanger}>
+          {pageIndex + 1}
         </button>
       ));
   }

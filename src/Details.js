@@ -22,6 +22,12 @@ export default props => {
               <h3>Receita</h3><div>{`$` + props.movie.revenue}</div>
               <h3>Lucro</h3><div>${props.movie.revenue - props.movie.budget}</div>
           </div>
+          <div className='DetailedGenresContainer'>
+              <div className='DetailedGenre'>{
+                props.movie.genres ?
+                (<div>{props.movie.genres.map(genre => genre.name)}</div>) :
+                (props.movie.genres)}</div>
+              </div>
           <div className='DetailsRating'><span>{props.movie.vote_average}</span></div>
         </div>              
       </div>

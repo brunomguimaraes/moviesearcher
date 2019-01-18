@@ -15,13 +15,25 @@
   max-height: 100%;
 }
 
+.DetailedGenresContainer{
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  grid-template-rows: 25% 50% 25%;
+}
+
+.DetailedGenresContainer > div {
+  grid-row-start: 2;
+  grid-auto-flow: row;
+}
+
 .DetailsMovieOverview{
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: rgb(245 , 245, 245);
-
 }
 
 .DetailsMovieOverview > span {

@@ -48,7 +48,7 @@ class App extends Component {
               currentPage={this.state.currentPage}
               movieCount={this.state.movieCount}
               pageSize={PAGE_SIZE}
-              idx={this.changeCurrentPage}
+              pageIndex={this.changeCurrentPage}
             />
           </React.Fragment>
         ) : (
@@ -68,13 +68,14 @@ class App extends Component {
   }
   
   changeCurrentPage = nextPage => {
+    console.log('Pagina', nextPage)
     this.setState({
       currentPage: nextPage
     })
   }
 
-  detailedSearch = searchParameter => {
-      getMovieDetails(searchParameter).then(movie => {
+  detailedSearch = searchById => {
+      getMovieDetails(searchById).then(movie => {
         this.setState({
           detailedMovie: movie
         });       
