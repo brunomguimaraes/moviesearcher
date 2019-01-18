@@ -3,6 +3,8 @@
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 10% 40% 30% 20%;
   margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: #EBEBEB;
 }
 .detailsMoviePoster{
   grid-column-start: 3;
@@ -18,7 +20,25 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  background: lightsalmon;
+  background-color: rgb(245 , 245, 245);
+
+}
+
+.DetailsMovieOverview > span {
+  color: #575756;
+  font-family: Lato;
+  display: flex;
+  align-self: flex-start;
+}
+.DetailsMovieOverview > h2 {
+  color: #116193;
+  font-family: Abel;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.DetailsMovieOverview > hr {
+  color: #00E8E4;
 }
 
 .DetailsMovieInfo{
@@ -29,17 +49,29 @@
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background: rgb(4, 236, 62);
+  background-color: rgb(245 , 245, 245);
 }
 
 .DetailsMovieInfo > h2 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  color: #116193;
+  font-family: Abel;
+  display: flex;
+  justify-content: space-around;
 }
 
 .DetailsMovieInfo > h3 {
   grid-row-start: 2;
   grid-auto-flow: row;
+  font-family: Abel;
+  color: #116193;
+  display: flex;
+  justify-content: center;
+}
+
+.DetailsMovieInfo > hr {
+width: 80%;
 }
 
 .DetailsMovieInfo > div {

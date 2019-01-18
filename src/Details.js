@@ -12,9 +12,9 @@ export default props => {
               alt="poster"
               src={"https://image.tmdb.org/t/p/w185" + props.movie.poster_path}
                       />
-          <div className='DetailsMovieOverview'><h2>Sinopse</h2>{props.movie.overview}</div>
+          <div className='DetailsMovieOverview'><h2>Sinopse</h2><hr/><span>{props.movie.overview}</span></div>
           <div className='DetailsMovieInfo'>
-          <h2>Informações</h2>
+          <h2>Informações<hr/></h2>
               <h3>Situação</h3><div>{props.movie.status}</div>     
               <h3>Idioma</h3><div>{props.movie.original_language}</div>
               <h3>Duração</h3><div>{props.movie.runtime}</div>
