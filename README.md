@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto feito utilizando [Create React App](https://github.com/facebook/create-react-app).
+
+ Desafio técnico web Jr/Sênio - processo seletivo da [Cubos](https://cubos.io/)
+ 
+ Para Utilizar a webapp, clone o repositório e a partir do terminal utilize o comando npm start. A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
 ## Available Scripts
 
