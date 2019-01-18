@@ -12,3 +12,9 @@ export async function getGenres () {
     const json = await result.json();
     return json.genres;
 }
+
+export async function getMovieDetails (movieId) {
+    const result = await fetch(`${MOVIE_DB_URL}/movie/${movieId}?api_key=${API_KEY}&language=pt-BR`)
+    const json = await result.json();
+    return json
+}
